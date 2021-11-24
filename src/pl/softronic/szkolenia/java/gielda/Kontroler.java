@@ -3,6 +3,7 @@ package pl.softronic.szkolenia.java.gielda;
 public class Kontroler {
     public void uruchomProgram() {
         //Uruchamia metody: tworzącą i testujacą giełdę
+
         tworzGielde();
         testujGielde();
     }
