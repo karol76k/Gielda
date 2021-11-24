@@ -7,9 +7,10 @@ public class Kontroler {
     }
 
     public void tworzGielde() {
+        System.out.println("Tworzę giełdę");
     }
 
     public void testujGielde(){
-
+        System.out.println("Testuję giełdę");
     }
 }
