@@ -8,6 +8,7 @@ public class Kontroler {
     UrzadSkarbowy us;
     Pojazd pojazd;
     SamochodOsobowy so;
+    Zaglowka zaglowka;
 
     public void uruchomProgram() {
         //Uruchamia metody: tworzącą i testujacą giełdę
@@ -53,7 +54,16 @@ public class Kontroler {
         so.setNadwozie("coupe");
         System.out.println(so);
         //TODO: data do poprawienia
-       // so.setDataPrzegladu(LocalDate("2021-01-03"));
+        //so.setDataPrzegladu.parse("2021-01-03");
+
+        zaglowka= new Zaglowka("Z", "Carina", 1978, 230_000f, 1, 1);
+        zaglowka.setDlugosc(33);
+        zaglowka.setPowZagli(50);
+        //LocalDate ddd = LocalDate.now();
+        zaglowka.setDataPrzegladu(LocalDate.now());
+        System.out.println(zaglowka);
+
+
     }
 
 
