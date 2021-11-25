@@ -2,7 +2,8 @@ package pl.softronic.szkolenia.java.gielda;
 
 public class Gielda {
 
-    public String nazwa = "";
+    private String nazwa = "";
+    protected String adres = "";
 
     public String getNazwa() {
         return nazwa;
@@ -19,8 +20,6 @@ public class Gielda {
     public void setAdres(String adres) {
         this.adres = adres;
     }
-
-    public String adres = "";
 
     public static void main(String[] args) {
         Kontroler kontroler = new Kontroler();
