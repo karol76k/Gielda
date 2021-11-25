@@ -27,6 +27,7 @@ public class Kontroler {
 
     public void testujGielde(){
         System.out.println("Testuję giełdę");
+        System.out.println(gielda);
     }
 
 

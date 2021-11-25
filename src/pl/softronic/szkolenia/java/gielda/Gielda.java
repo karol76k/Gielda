@@ -26,5 +26,11 @@ public class Gielda {
         kontroler.uruchomProgram();
     }
 
-
+    @Override
+    public String toString() {
+        return "Gielda{" +
+                "nazwa='" + nazwa + '\'' +
+                ", adres='" + adres + '\'' +
+                '}';
+    }
 }
