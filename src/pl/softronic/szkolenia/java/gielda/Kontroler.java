@@ -1,10 +1,13 @@
 package pl.softronic.szkolenia.java.gielda;
 
+import java.time.LocalDate;
+
 public class Kontroler {
 
     Gielda gielda;
     UrzadSkarbowy us;
     Pojazd pojazd;
+    SamochodOsobowy so;
 
     public void uruchomProgram() {
         //Uruchamia metody: tworzącą i testujacą giełdę
@@ -44,6 +47,13 @@ public class Kontroler {
         //Testujemy pojazd
         pojazd = new Pojazd("O", "Aston Martin", 1958, 300_000f, 1, 1);
         System.out.println(pojazd);
+
+        so= new SamochodOsobowy("O", "Aston Martin", 1958, 300_000f, 1, 1);
+        so.setLiczbaMiejsc(5);
+        so.setNadwozie("coupe");
+        System.out.println(so);
+        //TODO: data do poprawienia
+       // so.setDataPrzegladu(LocalDate("2021-01-03"));
     }
 
 

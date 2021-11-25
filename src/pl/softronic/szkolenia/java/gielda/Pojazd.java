@@ -1,6 +1,7 @@
 package pl.softronic.szkolenia.java.gielda;
 
 import java.text.DateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Pojazd {
@@ -14,9 +15,9 @@ public class Pojazd {
     private int idWlasciciel;
     private int idSprzedawca;
     private int idKupujacy;
-    private Date dataZgloszenia;
-    private Date dataSprzedazy;
-    private Date dataWycofania;
+    private LocalDate dataZgloszenia;
+    private LocalDate dataSprzedazy;
+    private LocalDate dataWycofania;
 
     private Pojazd(){
 
@@ -69,15 +70,15 @@ public class Pojazd {
         return idKupujacy;
     }
 
-    public Date getDataZgloszenia() {
+    public LocalDate getDataZgloszenia() {
         return dataZgloszenia;
     }
 
-    public Date getDataSprzedazy() {
+    public LocalDate getDataSprzedazy() {
         return dataSprzedazy;
     }
 
-    public Date getDataWycofania() {
+    public LocalDate getDataWycofania() {
         return dataWycofania;
     }
     //Setter
@@ -99,15 +100,15 @@ public class Pojazd {
         this.idWlasciciel = idWlasciciel;
     }
 
-    public void setDataZgloszenia(Date dataZgloszenia) {
+    public void setDataZgloszenia(LocalDate dataZgloszenia) {
         this.dataZgloszenia = dataZgloszenia;
     }
 
-    public void setDataSprzedazy(Date dataSprzedazy) {
+    public void setDataSprzedazy(LocalDate dataSprzedazy) {
         this.dataSprzedazy = dataSprzedazy;
     }
 
-    public void setDataWycofania(Date dataWycofania) {
+    public void setDataWycofania(LocalDate dataWycofania) {
         this.dataWycofania = dataWycofania;
     }
 
