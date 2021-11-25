@@ -5,7 +5,9 @@ import java.time.LocalDate;
 import java.util.Date;
 
 public class Pojazd {
-
+    final public static String SPZEDANY = "S";
+    final public static String WYCOFANY = "W";
+    final public static String PRZYJETY = "P";
     private int id =0;
     private String typPojazdu;
     private String marka ;

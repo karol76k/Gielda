@@ -73,7 +73,11 @@ public class Gielda {
             //WAZNE:
             idPom = ((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)).getId();
             if (idPom == id){
-                ((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)).setStatus("W");
+              //  ((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)).setStatus("W");
+
+                ((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)).setStatus(Pojazd.WYCOFANY);
+
+
                 System.out.println("Wycofano " +((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)));
             }
             //System.out.println(this.listaSamochodowOsobowych.elementAt(i));
