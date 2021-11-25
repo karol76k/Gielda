@@ -89,6 +89,9 @@ public class Kontroler {
         gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so2);
         gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so3);
 
+        gielda.wycofajSamochod(3);
+
+
         // jakie samochody sa na gieldzie
         //zaimplementujemy metode wyswietlajaca liste samochodow bedacych na gieldzie
         gielda.wyswietlSamochodyOsobowe();

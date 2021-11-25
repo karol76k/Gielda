@@ -92,6 +92,10 @@ public class Pojazd {
         this.marka = marka;
     }
 
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public void setRok(int rok) {
         this.rok = rok;
     }

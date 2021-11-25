@@ -65,4 +65,18 @@ public class Gielda {
         }
 
     }
+
+    public void wycofajSamochod(int id) {
+        int idPom = -1;
+
+        for (int i = 0; i<this.listaSamochodowOsobowych.size();  i++){
+            //WAZNE:
+            idPom = ((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)).getId();
+            if (idPom == id){
+                ((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)).setStatus("W");
+                System.out.println("Wycofano " +((SamochodOsobowy)this.listaSamochodowOsobowych.elementAt(i)));
+            }
+            //System.out.println(this.listaSamochodowOsobowych.elementAt(i));
+        }
+    }
 }
