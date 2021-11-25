@@ -24,7 +24,7 @@ public class UrzadSkarbowy {
 
     @Override
     public String toString() {
-        return "Gielda{" +
+        return "Urzad skarbowy{" +
                 "nazwa='" + nazwa + '\'' +
                 ", adres='" + adres + '\'' +
                 '}';

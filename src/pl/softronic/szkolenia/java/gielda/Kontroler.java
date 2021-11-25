@@ -4,6 +4,8 @@ public class Kontroler {
 
     Gielda gielda;
     UrzadSkarbowy us;
+    Pojazd pojazd;
+
     public void uruchomProgram() {
         //Uruchamia metody: tworzącą i testujacą giełdę
 
@@ -29,15 +31,20 @@ public class Kontroler {
         us.setNazwa("Urzad skarbowy");
         us.adres = "Warszawa ul. Zlota 5";
 
+
+
     }
 
 
-    public void testujGielde(){
+    public void testujGielde() {
         System.out.println("Testuję giełdę");
         System.out.println(gielda);
         System.out.println(us);
-    }
 
+        //Testujemy pojazd
+        pojazd = new Pojazd("O", "Aston Martin", 1958, 300_000f, 1, 1);
+        System.out.println(pojazd);
+    }
 
 
 }
