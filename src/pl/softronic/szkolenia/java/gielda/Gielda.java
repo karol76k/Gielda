@@ -33,4 +33,9 @@ public class Gielda {
                 ", adres='" + adres + '\'' +
                 '}';
     }
+
+    public void przyjmijSamochodOsobowy(int idSprzedawcy, int idWlasciciel, SamochodOsobowy so) {
+        System.out.println("Przyjalem do sprzedazy samochod: " +so.toString());
+
+    }
 }

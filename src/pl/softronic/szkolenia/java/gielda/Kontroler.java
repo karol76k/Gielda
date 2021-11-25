@@ -63,6 +63,19 @@ public class Kontroler {
         zaglowka.setDataPrzegladu(LocalDate.now());
         System.out.println(zaglowka);
 
+        /*
+        1. utworzyc pojazd
+        2. gielda
+        3. idPracownika
+        4. idKlienta
+        5. zaglowka lub sam osobowy
+        6. metoda ktora nam zarejestruje fakt przyjecie
+
+
+         */
+        int idSprzedawcy = 2;
+        int idWlasciciel = 10;
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so);
 
     }
 
