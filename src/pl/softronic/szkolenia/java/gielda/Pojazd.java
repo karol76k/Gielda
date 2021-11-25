@@ -38,6 +38,10 @@ public class Pojazd {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getTypPojazdu() {
         return typPojazdu;
     }
@@ -115,6 +119,7 @@ public class Pojazd {
     @Override
     public String toString() {
         return "Pojazd{" +
+                "idPojazdu='" + id + '\'' +
                 "typPojazdu='" + typPojazdu + '\'' +
                 ", marka='" + marka + '\'' +
                 ", rok=" + rok +

@@ -59,10 +59,14 @@ public class SamochodOsobowy extends Pojazd{
     @Override
     public String toString() {
         return "SamochodOsobowy{" +
-                "liczbaMiejsc=" + liczbaMiejsc +
+                "idPojazdu='" + super.getId() + '\'' +
+                "marka=" + super.getMarka() + '\'' +
+                " liczbaMiejsc=" + liczbaMiejsc +
                 ", nadwozie='" + nadwozie + '\'' +
                 ", pojemnosc=" + pojemnosc +
                 //", dataPrzegladu=" + dataPrzegladu +
                 '}';
     }
+
+
 }

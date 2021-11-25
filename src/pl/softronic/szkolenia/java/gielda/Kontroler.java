@@ -52,6 +52,15 @@ public class Kontroler {
         so= new SamochodOsobowy("O", "Aston Martin", 1958, 300_000f, 1, 1);
         so.setLiczbaMiejsc(5);
         so.setNadwozie("coupe");
+
+        SamochodOsobowy so1= new SamochodOsobowy("O", "BMW", 1999, 800_000f, 1, 1);
+        SamochodOsobowy so2= new SamochodOsobowy("O", "Maluch", 2001, 230_000f, 1, 1);
+        SamochodOsobowy so3= new SamochodOsobowy("O", "Ford", 2019, 190_000f, 1, 1);
+
+
+
+
+
         System.out.println(so);
         //TODO: data do poprawienia
         //so.setDataPrzegladu.parse("2021-01-03");
@@ -76,6 +85,9 @@ public class Kontroler {
         int idSprzedawcy = 2;
         int idWlasciciel = 10;
         gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so);
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so1);
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so2);
+        gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so3);
 
         // jakie samochody sa na gieldzie
         //zaimplementujemy metode wyswietlajaca liste samochodow bedacych na gieldzie

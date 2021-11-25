@@ -40,15 +40,27 @@ public class Gielda {
     }
 
     public void przyjmijSamochodOsobowy(int idSprzedawcy, int idWlasciciel, SamochodOsobowy so) {
+
+        int id = this.listaSamochodowOsobowych.size() +1;
+        so.setId(id);
+        this.listaSamochodowOsobowych.add(so);
         System.out.println("Przyjalem do sprzedazy samochod: " +so.toString());
+
 
     }
 
     public void wyswietlSamochodyOsobowe() {
+
+
         if (this.listaSamochodowOsobowych.size()==0){
-            System.out.println("Wyswietlam samochody: 0 ");
+            System.out.println("Brak samochodow na gieldzie ");
         } else {
-            System.out.println("Wyswietlam samochody:  ");
+            System.out.println("Liczba samochodow na gieldzie: " + this.listaSamochodowOsobowych.size());
+
+
+            for (int i = 0; i<this.listaSamochodowOsobowych.size();  i++){
+                System.out.println(this.listaSamochodowOsobowych.elementAt(i));
+            }
 
         }
 
