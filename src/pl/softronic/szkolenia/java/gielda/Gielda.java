@@ -5,4 +5,6 @@ public class Gielda {
         Kontroler kontroler = new Kontroler();
         kontroler.uruchomProgram();
     }
+
+
 }

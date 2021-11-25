@@ -5,10 +5,16 @@ public class Kontroler {
         //Uruchamia metody: tworzącą i testujacą giełdę
 
         tworzGielde();
+        wczytajDane();
         testujGielde();
     }
 
+    private void wczytajDane() {
+        
+    }
+
     public void tworzGielde() {
+
         System.out.println("Tworzę giełdę");
     }
 
