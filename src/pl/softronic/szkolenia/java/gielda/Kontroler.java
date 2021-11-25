@@ -77,6 +77,10 @@ public class Kontroler {
         int idWlasciciel = 10;
         gielda.przyjmijSamochodOsobowy(idSprzedawcy, idWlasciciel, so);
 
+        // jakie samochody sa na gieldzie
+        //zaimplementujemy metode wyswietlajaca liste samochodow bedacych na gieldzie
+        gielda.wyswietlSamochodyOsobowe();
+
     }
 
 
