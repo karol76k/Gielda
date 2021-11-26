@@ -107,8 +107,15 @@ public class Kontroler {
         Sprzedawca sp1 = new Sprzedawca(1, "Wladek Lokietek");
         Sprzedawca sp2 = new Sprzedawca(2, "Kazimierz Nowak");
 
-        System.out.println(sp1);
-        System.out.println(sp2);
+        //Powinnismy ich wprowadzic na liste sprzedawcow na Giledzie
+        gielda.zatrudnijSprzedawce(sp1);
+        gielda.zatrudnijSprzedawce(sp2);
+
+       // System.out.println(sp1);
+       // System.out.println(sp2);
+
+        gielda.wyswietlSprzdawcow();
+        //
 
         //test podatek
         Podatek p1 = new Podatek(1, "576576575", 200);
