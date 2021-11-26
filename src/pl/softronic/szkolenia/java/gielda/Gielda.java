@@ -44,6 +44,7 @@ public class Gielda {
 
         int id = this.listaSamochodowOsobowych.size() +1;
         so.setId(id);
+        so.setStatus(Pojazd.PRZYJETY);
         this.listaSamochodowOsobowych.add(so);
         System.out.println("Przyjalem do sprzedazy samochod: " +so.toString());
 
@@ -56,6 +57,7 @@ public class Gielda {
         // a lista sprzedawcow
 
         SamochodOsobowy samOs;
+        int aktualnaLiczbaDostepnychSamochodow = 0;
         if (this.listaSamochodowOsobowych.size()==0){
             System.out.println("Brak samochodow na gieldzie ");
         } else {
@@ -73,9 +75,13 @@ public class Gielda {
 
                 // z rzutowaniem
                 samOs = (SamochodOsobowy) this.listaSamochodowOsobowych.elementAt(i);
-                System.out.println(samOs);
-            }
+                if (samOs.getStatus().equals(Pojazd.PRZYJETY)){
+                    aktualnaLiczbaDostepnychSamochodow++;
+                    System.out.println(samOs);
+                }
 
+            }
+            System.out.println("Liczba samochodow na gieldzie: " + aktualnaLiczbaDostepnychSamochodow);
         }
 
     }
@@ -96,6 +102,7 @@ public class Gielda {
             }
             //System.out.println(this.listaSamochodowOsobowych.elementAt(i));
         }
+        //System.out.println("Liczba samochodow na gieldzie: " + aktualnaLiczbaDostepnychSamochodow);
     }
 
     public void zatrudnijSprzedawce(Sprzedawca sprzedawca) {
