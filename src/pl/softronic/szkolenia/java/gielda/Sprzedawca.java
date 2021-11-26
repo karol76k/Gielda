@@ -9,4 +9,12 @@ public class Sprzedawca {
         this.personalia = personalia;
 
     }
+
+    @Override
+    public String toString() {
+        return "Sprzedawca{" +
+                "id=" + id +
+                ", personalia='" + personalia + '\'' +
+                '}';
+    }
 }

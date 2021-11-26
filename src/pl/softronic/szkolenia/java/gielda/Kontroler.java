@@ -96,7 +96,26 @@ public class Kontroler {
         //zaimplementujemy metode wyswietlajaca liste samochodow bedacych na gieldzie
         gielda.wyswietlSamochodyOsobowe();
 
-    }
+        //Test klientow
+        Klient kl1 = new Klient("1234", "Jan Kowalski");
+        Klient kl2 = new Klient("4321", "Adam Mickiewicz");
 
+        System.out.println(kl1);
+        System.out.println(kl2);
+
+        //test sprzedawcow
+        Sprzedawca sp1 = new Sprzedawca(1, "Wladek Lokietek");
+        Sprzedawca sp2 = new Sprzedawca(2, "Kazimierz Nowak");
+
+        System.out.println(sp1);
+        System.out.println(sp2);
+
+        //test podatek
+        Podatek p1 = new Podatek(1, "576576575", 200);
+        Podatek p2 = new Podatek(2, "123452778", 786);
+
+        System.out.println(p1);
+        System.out.println(p2);
+    }
 
 }
